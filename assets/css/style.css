@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+ 
 }
 
 body {
@@ -9,4 +10,128 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
+  background: #caf0f8;
 }
+
+
+header {
+  background: #9D8189;
+  padding: 30px;
+  text-align: center;
+  font-size: 2em;
+  
+ 
+
+}
+.introText {
+  font-size: 20px
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+}
+
+#startBtn {
+  max-width: 255px;
+  line-height: 16px;
+  margin-top: 0.6em;
+  border-radius: 8px;
+  font-size: 2em;
+  cursor: pointer;
+  padding: 20px 52px;
+  text-align: center;
+  background: #FFCAD4;
+  
+
+
+}
+
+
+
+.go, #timeEl {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+}
+
+#timeEl {
+  font-size: 2em
+}
+
+#questionHeader {
+  text-align: center;
+  font-size: 2.5em;
+
+}
+
+.card {
+  margin: auto;
+  padding: 10px;
+}
+
+
+#buttonArea {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+#a, #b, #c {
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  max-width: 500px;
+  padding: 10px 32px;
+  text-align: center;
+  margin-top: 1.5em;
+  background: #D8E2DC;
+ 
+}
+
+#result {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+
+}
+
+input {
+  border-radius: 8px;
+  max-width: 200px;
+  line-height: 30px;
+  text-align: left;
+  padding: 4px
+
+}
+
+#initials, #saveScore {
+  font-size: 1em;
+  margin: 8px;
+  
+}
+
+#initials {
+  color: #9D8189;
+}
+
+
+#saveScore {
+  background: #F4ACB7;
+}
+
+
+footer {
+
+  padding: 30px;
+
+
+}
+
+
+
