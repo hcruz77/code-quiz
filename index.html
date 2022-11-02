@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="intro">
+            <h1>CODE QUIZ</h1>
+            <P>Answer the multiple choice questions before the timer ends. Answer incorrectly, lose 5 seconds. When game
+                is over, enter your initials and save your score.</P>
+            <button id="startBtn">Start Quiz</button>
+    </header>
+    <main>
+        <section>
+            <div class="card quiz-guess">
+
+                <div id="game" class="hide">
+
+                    <h2 id="questionHeader"></h2>
+
+                    <div id="buttonArea">
+                        <button id="a">A</button>
+                        <button id="b">B</button>
+                        <button id="c">C</button>
+                        <button id="d">D</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card results">
+                <div class="win-loss-container">
+                    <div id="endScreen" class="hide">
+                        <div class="card timer">
+                            <div class="timer-text">
+                                <p id="timeEl"></p>
+                            </div>
+                        </div>
+                        <form>
+                            <label for="initials">Input Initials</label>
+                            <input name="initials" id="initials">
+                            <button id="saveScore">Save Score</button>
+                        </form>
+                    </div>
+                    <div id="highScores">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
