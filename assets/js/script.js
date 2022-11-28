@@ -80,14 +80,14 @@ function endScreen() {
 }
 
 
-//alerts user of answer results and when game is over
+//alerts user of answer results and when game timer is finished.
 
 buttonArea.addEventListener('click', function (event) {
   console.log(event.target.textContent);
 
   if (arrayIndex >= 3) {
-    console.log("Game is done");
-    result.textContent = "GAME IS DONE"
+    console.log("Time is UP");
+    result.textContent = "TIME IS UP!"
     endScreen();
   } else {
     if (event.target.textContent === questions[arrayIndex].answer) {
@@ -136,16 +136,19 @@ var timeInterval = setInterval(function () {
 //saves score and initials to local storage
 function saveScore() {
   var initialsEl = document.getElementById('initials').value;
+  var display = document.getElementById('display').value;
 
-  if (localStorage.getItem('Scores')) {
-    scoresArr = [localStorage.getItem('Scores')];
+  if (localStorage.getItem('display')) {
+    scoresArr = [localStorage.getItem('display')];
+    
   } else {
     scoresArr = [];
   }
 
   scoresArr.push(initialsEl);
+  display.textContent = initialsEl;
 
-  localStorage.setItem('Scores', scoresArr);
+  localStorage.setItem('display', scoresArr);
  
 }
 
