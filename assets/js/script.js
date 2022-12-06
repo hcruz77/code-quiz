@@ -146,7 +146,7 @@ function saveScore() {
   }
 
   scoresArr.push(initialsEl);
-  display.textContent = initialsEl;
+  //display.textContent = initialsEl;
 
   localStorage.setItem('display', scoresArr);
  
